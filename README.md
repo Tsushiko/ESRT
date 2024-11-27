@@ -7,10 +7,11 @@ Fase B
 - Relatório de Especificação
 - Demo
   - Rede de sensores simulada em Cupcarbon
-  - Código python para gerar caminhos para os "Veículos"
+  - Gerador de Eventos com as seguintes funcionalidades
     - Exemplos de caminhos para 10 Veículos
-    - Associar um lugar a 10 Veículos
-    - Alterar o valor da simulação da existência de uma Reserva
+    - Associar um lugar a cada um dos 10 Veículos
+    - Definir um caminho manualmente
+    - Alterar o valor do número de mensagens até haver uma Reserva de um lugar.
     - Colocar ou remover o tratamento de colisóes entre mensagens.
 
 Fase C
