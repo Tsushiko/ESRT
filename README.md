@@ -4,9 +4,12 @@ Fase A
 (As rotas e os endereços foram completamente alterados)
 
 Fase B
-- CupCarbon
-- Código python para gerar caminhos para os "Veículos"
+- Relatório de Especificação
+- Demo B
+  - CupCarbon
+  - Código python para gerar caminhos para os "Veículos"
 
 Fase C
+- Relatório de Especificação
 - ...
 
