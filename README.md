@@ -1,7 +1,7 @@
 # Projeto de Emulação e Simulação de Redes de Telecomunicações
 Fase A
 - Relatório de Especificação
-(As rotas e enderços foram completamente alterados)
+(As rotas e os endereços foram completamente alterados)
 
 Fase B
 - CupCarbon
