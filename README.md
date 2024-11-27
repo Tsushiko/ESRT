@@ -5,7 +5,7 @@ Fase A
 
 Fase B
 - Relatório de Especificação
-- Demo B
+- Demo
   - CupCarbon
   - Código python para gerar caminhos para os "Veículos"
 
