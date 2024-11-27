@@ -4,7 +4,7 @@ def rotasmanuais():
     resposta2 = input("Indique os detalhes da rota no seguinte formato:(em loops coloque true ou false)\n"
                       "nºrota,loops,nloops\n")
     loop = resposta2.split(",")
-    filepath = "../V8-Final/gps/route" + loop[0] + ".gps"
+    filepath = "../Cupcarbon_G2/gps/route" + loop[0] + ".gps"
     stringfinal = ""
     stringfinal += "Route name\nCity one\nCity two\n" + loop[1] + "\n" + loop[2] + "\n"
     ponto = input("Insira um ponto do seguinte formato (doubles):\n"
@@ -25,29 +25,29 @@ def rotasmanuais():
         file.write(stringfinal)
 
 def alterareservas(valor):
-    with open("../V8-Final/scripts/Gateway.csc", "r") as file:
+    with open("../Cupcarbon_G2/scripts/Gateway.csc", "r") as file:
         script=file.read()
 
     #\1 representa o primeiro grupo que neste caso é a palavra reserva
     novoscript = re.sub(r'(reserva) (\d+)', r'\1 '+ valor , script)
 
-    with open("../V8-Final/scripts/Gateway.csc", "w") as file:
+    with open("../Cupcarbon_G2/scripts/Gateway.csc", "w") as file:
         file.write(novoscript)
 
 def collisions(valor):
     if (valor =="1"):
-        with open("../V8-Final/scripts/Multihop.csc", "r") as file:
+        with open("../Cupcarbon_G2/scripts/Multihop.csc", "r") as file:
             script=file.read()
         novoscript = re.sub(r'(send x iddestino\n)(send col iddestino)', r'//\1//\2 ', script)
         finalscript= re.sub(r'//(send respum id\n)//(send respdois idsegundo)', r'\1\2 ', novoscript)
-        with open("../V8-Final/scripts/Multihop.csc", "w") as file:
+        with open("../Cupcarbon_G2/scripts/Multihop.csc", "w") as file:
             file.write(finalscript)
     else:
-        with open("../V8-Final/scripts/Multihop.csc", "r") as file:
+        with open("../Cupcarbon_G2/scripts/Multihop.csc", "r") as file:
             script=file.read()
         novoscript = re.sub(r'//(send x iddestino\n)//(send col iddestino)', r'\1\2 ', script)
         finalscript =re.sub(r'(send respum id\n)(send respdois idsegundo)', r'//\1//\2 ', novoscript)
-        with open("../V8-Final/scripts/Multihop.csc", "w") as file:
+        with open("../Cupcarbon_G2/scripts/Multihop.csc", "w") as file:
             file.write(finalscript)
 
 def escolharotas():
@@ -57,7 +57,7 @@ def escolharotas():
                                                           "nlugar,loops,nloops\n"
                                                           "PS:Se não quiser que esse veículo vá para um lugar, coloque 0 no nlugar.\n")
         resp = resposta2.split(",")
-        filepath = "../V8-Final/gps/route" + str(i) + ".gps"
+        filepath = "../Cupcarbon_G2/gps/route" + str(i) + ".gps"
         if (resp[0] != "0") and (resp[1] == "true"):
             string = Lugares[int(resp[0])].replace("false", "true")
             string = string.replace("10\n", resp[2] + "\n")
@@ -113,13 +113,13 @@ match resposta1:
 
         if (exemplo=="1"):
             for i in range(1, 11):
-                filepath = "../V8-Final/gps/route" + str(i) + ".gps"
+                filepath = "../Cupcarbon_G2/gps/route" + str(i) + ".gps"
                 stringfinal = Exemplo1[i]
                 with open(filepath, "w") as file:
                     file.write(stringfinal)
         if (exemplo=="2"):
             for i in range(1, 11):
-                filepath = "../V8-Final/gps/route" + str(i) + ".gps"
+                filepath = "../Cupcarbon_G2/gps/route" + str(i) + ".gps"
                 stringfinal = Lugares[i]
                 with open(filepath, "w") as file:
                     file.write(stringfinal)
