@@ -1,7 +1,7 @@
 Rede de Sensores tem:
 - Sensores direcionais (10):
   - Ligam quando detetam um carro no lugar associado a este.
-  - Enviam mensagem para o Gateway com informação de uma ocupação ou desocupação de um lugar.
+  - Enviam mensagem para o Gateway com informação de uma ocupação (1) ou desocupação (0) de um lugar.
   - Se receberem uma mensagem de Reserva eles ligam a luz.
   - Se receberem um aviso sobre uma colisão entre mensagens, dão um backoff aleatório entre 11 a 50 ms e reenviam. 
 - Nodos multihop (2):
@@ -13,5 +13,6 @@ Rede de Sensores tem:
   - Atualiza o array com o estado do estacionamento dependendo das mensagens dos sensores.
   - Calcula o número de lugares livres e envia este valor para o Placar.
   - Após x mensagens simula a existência de uma reserva (envia uma mensagem para um sensor que não esteja ligado para o ligar, "reserva o lugar")
+  - Escreve as ocupações , desocupações e reservas que são feitas num ficheiro ("O lugar 3 foi ocupado", escreve "3 :  1" no ficheiro)
 - Placar/Atuador (1):
   - Apenas expõe o valor das vagas livres que recebe do gateway.
