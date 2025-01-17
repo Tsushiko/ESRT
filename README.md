@@ -11,6 +11,7 @@ Fase B
 Fase C
 - Relatório de Especificação
 - Relatório Final
+- Apresentação
 - Base de Dados
 - Publisher e Subscriber MQTT
 - Rede de Sensores
