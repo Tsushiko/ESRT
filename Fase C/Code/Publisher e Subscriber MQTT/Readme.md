@@ -2,6 +2,11 @@
   - Tem de ser executado após iniciar a simulação no Cupcarbon.
   - Este reencaminha o que está a ser escrito no ficheiro para um dispositivo ubuntu docker que se encontra no GNS3.
   - Envia para o ubuntu docker com ip 10.0.0.2 (Subscriber-1) e 10.0.0.10 (Subscriber-2).
+- Subscriber
+  - É colocado em dois dispositivos ubuntu docker do gns3.
+  - Recebe as mensagens de desocupação e ocupação de cada lugar e atualiza a base de dados.
+  - Se for o Subscriber-1 (10.0.0.2) povoa a base de dados, DatabaseWebserver-1 (10.0.0.3).
+  - Se for o Subscriber-2 (10.0.0.3) povoa a base de dados, DatabaseWebserver-2 (10.0.0.11).
 - SINK45
   - Exemplo de um ficheiro obtido na pasta de resultados do CupCarbon após a simulação.
   - Enquanto o Cupcarbon escreve neste, o publisher vai ler essas novas linhas inseridas.
