@@ -10,3 +10,4 @@
 - SINK45
   - Exemplo de um ficheiro obtido na pasta de resultados do CupCarbon após a simulação.
   - Enquanto o Cupcarbon escreve neste, o publisher vai ler essas novas linhas inseridas.
+  - A mensagem "0 :  0" é colocada mal se começa a simulação no Cupcarbon, pois o gateway só pode escrever nesse ficheiro se não estiver aberto, logo desta forma podemos correr o publisher mal se inicia a simulação do Cupcarbon.
