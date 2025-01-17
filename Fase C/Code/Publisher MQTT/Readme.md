@@ -1,1 +1,7 @@
-
+- Publisher
+  - Tem de ser executado após iniciar a simulação no Cupcarbon.
+  - Este reencaminha o que está a ser escrito no ficheiro para um dispositivo ubuntu docker que se encontra no GNS3.
+  - Envia para o ubuntu docker com ip 10.0.0.2 (Subscriber-1) e 10.0.0.10 (Subscriber-2).
+- SINK45
+  - Exemplo de um ficheiro obtido na pasta de resultados do CupCarbon após a simulação.
+  - Enquanto o Cupcarbon escreve neste o publisher vai ler essas novas linhas inseridas.
