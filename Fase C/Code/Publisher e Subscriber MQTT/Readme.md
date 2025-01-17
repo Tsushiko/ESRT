@@ -1,7 +1,7 @@
 - Publisher
   - Tem de ser executado após iniciar a simulação no Cupcarbon.
   - Este reencaminha o que está a ser escrito no ficheiro para um dispositivo ubuntu docker que se encontra no GNS3.
-  - Envia para o ubuntu docker com ip 10.0.0.2 (Subscriber-1) e 10.0.0.10 (Subscriber-2).
+  - Envia para o container Ubuntu Docker com o Mosquitto Broker, que tem o ip 10.0.0.2 (Subscriber-1), e para aquele com o ip 10.0.0.10 (Subscriber-2)
 - Subscriber
   - É colocado em dois dispositivos ubuntu docker do gns3.
   - Recebe as mensagens de desocupação e ocupação de cada lugar e atualiza a base de dados.
