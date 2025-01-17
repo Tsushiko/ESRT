@@ -1,4 +1,4 @@
 - Projeto Cupcarbon
   - Desde a Fase B, apenas foi acrescentado a escrita das ocupações e desocupações num ficheiro.
 - Gerador de Eventos
-  - O mesmo da Fase B
+  - O mesmo da Fase B.
