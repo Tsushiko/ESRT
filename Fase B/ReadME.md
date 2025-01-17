@@ -5,3 +5,4 @@
     - Definir um caminho manualmente
     - Alterar o valor do número de mensagens até haver uma Reserva de um lugar.
     - Colocar ou remover o tratamento de colisóes entre mensagens.
+  - Relatório de Especificação
